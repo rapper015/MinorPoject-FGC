@@ -9,7 +9,6 @@
     box-sizing: border-box;
 
 }
-
 .navbar {
     width: 100%;
     background-color: black;
@@ -590,8 +589,12 @@ textarea:valid~label {
      "left_filter block2"
      "left_filter block3"
      "left_filter block4";
+     text-decoration: none;
+     color: black;
 }
-
+    .producer_area p{
+        color: black;
+    }
 .block1 {
     grid-area:block1;
     display: flex;
@@ -687,6 +690,7 @@ textarea:valid~label {
         flex-direction: column;
         justify-content:center;
         margin: 10px;
+        border-right: 1px solid black;
     }
     .genre {
         width: 100%;
