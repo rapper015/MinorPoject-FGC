@@ -592,11 +592,6 @@ textarea:valid~label {
      "left_filter block4";
 }
 
-.left_filter {
-    background-color: yellow;
-    grid-area:left_filter;
-}
-
 .block1 {
     grid-area:block1;
     display: flex;
@@ -685,3 +680,31 @@ textarea:valid~label {
         margin-top: 15px;
         background-repeat: no-repeat;
     }
+.left_filter {
+        font-family: 'Roboto', sans-serif;
+        grid-area:left_filter;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        margin: 10px;
+    }
+    .genre {
+        width: 100%;
+        height: auto;
+    }
+        .genre_adjus{
+            display: flex;
+            flex-direction: column;
+            align-items:flex-start;
+            margin:10px ;
+        }
+        .label{
+            display: inline-flex;
+        }
+    .rate{
+        width: 100%;
+        height: auto;
+    }
+        .rate span:hover{
+            color: orange;
+        }
