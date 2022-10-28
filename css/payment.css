@@ -116,6 +116,7 @@ body{
 	background-color: #ee4242;
 	padding: 10px;
 	border-radius: 5px;
+	text-decoration: none;
 }
 .download a:active{
 	background-color: #c53131;
