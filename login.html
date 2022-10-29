@@ -9,9 +9,9 @@
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+		<script src="https://kit.fontawesome.com/0ef8057b2b.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
     <nav class="navbar">
         <div class="logo">
@@ -33,7 +33,7 @@
                             <li><a href="apply_online.html">Apply Online</a></li>
                         </ul>
                 </li>
-                <li><a href="#">Upload Your Register Work</a>
+                <li><a href="">Upload Your Register Work</a>
                 </li>
                 <li><a href="#">Ask FGC</a>
                         <ul>
@@ -48,27 +48,24 @@
             <li><div class="login"><a href="login.html">Login</a></div></li>
         </ul>
     </nav>
-    <div class="section">
-        <div class="title">
-            <h1>ABOUT US</h1>
+    <div class="login_container">
+        <div id="overlay">
+            <div class="login_container-main">
+                <h1>LOGIN</h1>
+            <div class="input-group">
+                <input type="text" id="name"required>
+                <label for="name"><i class="fa-solid fa-user"></i>User Name/Email</label>
+            </div>
+            <div class="input-group">
+                <input type="text" id="name"required>
+                <label for="name"><i class="fa-solid fa-key"></i>Password</label>
+            </div>
+            <a href="#">Forget Password?</a><br>
+            <input type="submit" value="LOGIN" class="login-btn">
+            <br> Not a Member?<a href="apply_online.html" style="color:  #ee4242;;"> Sign Up</a>
         </div>
-        <div class="services">
-            <div class="card">
-                <div class="icon">
-                    <i class="fas fa-calender"></i>
-                </div>
-                <h2>OUR CONSTITUTION</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam itaque, ab eaque possimus ullam
-                    aperiam ipsam repudiandae voluptatum minima tempora labore repellendus suscipit eveniet, molestias
-                    porro fugiat earum nesciunt fugit assumenda natus officiis dicta.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam itaque, ab eaque possimus ullam
-                    aperiam ipsam repudiandae voluptatum minima tempora labore repellendus suscipit eveniet, molestias
-                    porro fugiat earum nesciunt fugit assumenda natus officiis dicta.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam itaque, ab eaque possimus ullam
-                    aperiam ipsam repudiandae voluptatum minima tempora labore repellendus suscipit eveniet, molestias
-                    porro fugiat earum nesciunt fugit assumenda natus officiis dicta.</p>
-
-            </div>
-            </div>
-            </div>
+        </div>
+    </div>
    <footer>
     <div class="footer-top">
         <h3>Film Ginny Corporation</h3>
@@ -83,9 +80,6 @@
     <div class="footer-bottom">
     <p>Copyright &copy;2022 Film Ginny Corporation. Designed By <span>Developers Squard Group</span></p>
     </div>
-</footer> 
-              
-
+</footer>            
 </body>
-
 </html>
