@@ -1,6 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap');
 
+html{
+	font-size: 62.5%;
+}
+@media(max-width:998px){
+	html{
+		font-size:55%;
+}
+}
+@media(max-width:768px){
+	html{
+		font-size:45%;
+}}
+@media(max-width:600px){
+	html{
+		font-size:35%;
+}}
+
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +31,7 @@ html, body {
     overflow-x: hidden;
   }
 .navbar {
-    width: 100%;
+    width: 100vw;
     background-color: black;
     color: white;
     display: flex;
@@ -33,7 +50,7 @@ html, body {
     text-transform: uppercase;
     margin: 0px 5px;
     padding: 8px 12px;
-    font-size: 16px;
+    font-size: 1.6rem;
     position: relative;
 }
 
@@ -146,7 +163,7 @@ footer {
 }
 
 .footer-top h3 {
-    font-size: 24px;
+    font-size: 2.4rem;
     font-weight: 400;
     text-transform: capitalize;
     line-height: 2.5rem;
@@ -156,7 +173,7 @@ footer {
     max-width: 500px;
     margin: 10px auto;
     line-height: 25px;
-    font-size: 15px;
+    font-size: 1.5rem;
 }
 
 .socials {
@@ -192,7 +209,7 @@ footer {
 }
 
 .footer-bottom p {
-    font-size: 15px;
+    font-size: 1.5rem;
     word-spacing: 2px;
 }
 
@@ -306,7 +323,7 @@ textarea {
     outline: 0;
     border: 2px solid rgb(255, 255, 255);
     background: transparent;
-    font-size: 15px;
+    font-size: 1.5rem;
     color: white;
     border-radius: 5px;
 }
@@ -344,7 +361,7 @@ input:valid~label,
 textarea:focus~label,
 textarea:valid~label {
     top: -35px;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 .row {
@@ -394,7 +411,7 @@ textarea:valid~label {
     display: flex;
     justify-content: center;
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    font-size: 2rem;
     margin-top: 30px;
     letter-spacing: 2px;
 }
@@ -409,7 +426,7 @@ textarea:valid~label {
 .title h1 {
     text-align: center;
     padding-top: 50px;
-    font-size: 42px;
+    font-size: 4.2rem;
 }
 
 .title h1::after {
@@ -442,18 +459,18 @@ textarea:valid~label {
 }
 
 .card .icon {
-    font-size: 35px;
+    font-size: 3.5rem;
     margin-bottom: 10px;
 }
 
 .card h2 {
-    font-size: 28px;
+    font-size: 2.8rem;
     color: #ee4242;
     margin-bottom: 20px;
 }
 
 .card p {
-    font-size: 17px;
+    font-size: 1.7rem;
     margin-bottom: 30px;
     line-height: 1.5;
     color: black;
@@ -509,7 +526,7 @@ textarea:valid~label {
     outline: 0;
     border: 2px solid rgb(255, 255, 255);
     background: transparent;
-    font-size: 15px;
+    font-size: 1.5rem;
     color: white;
     border-radius: 5px;
 }
@@ -742,7 +759,7 @@ textarea:valid~label {
 }
 .login_container-main h1{
     padding: 10px;
-    font-size: 40px;
+    font-size: 4rem;
 }
 .login_container-main a{
     text-decoration: none;
