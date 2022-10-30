@@ -4,20 +4,10 @@
 html{
 	font-size: 62.5%;
 }
-@media(max-width:998px){
+@media(max-width:400px){
 	html{
 		font-size:55%;
-}
-}
-@media(max-width:768px){
-	html{
-		font-size:45%;
 }}
-@media(max-width:600px){
-	html{
-		font-size:35%;
-}}
-
 * {
     margin: 0;
     padding: 0;
@@ -29,6 +19,14 @@ html{
 html, body {
     width: auto;
     overflow-x: hidden;
+  }
+  html{
+    height: 100%;
+  }
+  body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
   }
 .navbar {
     width: 100vw;
@@ -144,15 +142,12 @@ html, body {
 footer {
     position: relative;
     bottom: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
     background-color: rgba(0, 0, 0, 0.92);
     color: #fff;
     max-height: 500px;
     width: 100%;
     font-family: 'Roboto', sans-serif;
-    
+    margin-top: auto;
 }
 
 .footer-top {
@@ -274,7 +269,26 @@ footer {
     color: #ee4242;
     transition: all 100ms ease-in-out;
 }
-
+/*YOUTUBE*/
+.youtube{
+    width: 100%;
+    position: absolute;
+    max-height: 200vh;
+    background-color: chartreuse;
+    display: flex;
+    font-size: 3rem;
+    font-family: 'Roboto', sans-serif;
+}
+.youtube-1{
+    width: 50%;
+    height: 30vh;
+    background-color: #ee4242;
+}
+.youtube-2{
+    width: 50%;
+    height: 30vh;
+    background-color: aquamarine;
+}
 /*CONTACT US*/
 .contact-box {
     display: flex;
@@ -488,6 +502,7 @@ textarea:valid~label {
     color: white;
     display: flex;
     justify-content: center;
+    font-size: 2rem;
 }
 
 .overlay {
@@ -544,7 +559,7 @@ textarea:valid~label {
 
 #member {
     display: flex;
-    font-size: large;
+    font-size: 2rem;
     margin-right: 50px;
     margin-bottom: 20px;
     transition: all 0.2s ease
