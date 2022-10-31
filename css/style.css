@@ -840,7 +840,7 @@ textarea:valid~label {
     background-size: cover;
     background-repeat: no-repeat;
     width:100%;
-    min-height: 70vh;
+    min-height: 80vh;
     padding: 5rem;
 }
 .qus-item{
