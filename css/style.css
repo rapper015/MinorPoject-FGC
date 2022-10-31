@@ -25,14 +25,14 @@ html, body {
     min-height: 100%;
   }
 .navbar {
-    width: 100vw;
+    width: 100%;
+    margin-top: 0;
     background-color: black;
     color: white;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-
 .navbar ul {
     display: flex;
     align-items: center;
@@ -841,8 +841,14 @@ textarea:valid~label {
 @media(max-width:925px){
     .nav_button{
         display: flex;
-    }
-    .menu{
+    } 
+    .menu {
         display: none;
+    }
+    .menu ul{
+        flex-direction: column;
+    }
+    .menu.active {
+        display: flex;
     }
 }
