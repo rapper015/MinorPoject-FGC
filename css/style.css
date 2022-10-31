@@ -217,7 +217,6 @@ footer {
 .director {
     width: 100%;
     min-height: 24vh;
-    background-color: #7bd1be;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -230,7 +229,11 @@ footer {
     background-position: center;
     color: white;
 }
-
+.director p{
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1rem;
+    border-radius: 5px;
+}
 .director button {
     width: 200px;
     margin-top: 30px;
@@ -272,22 +275,25 @@ footer {
 /*YOUTUBE*/
 .youtube{
     width: 100%;
-    position: absolute;
     max-height: 200vh;
-    background-color: chartreuse;
     display: flex;
-    font-size: 3rem;
     font-family: 'Roboto', sans-serif;
+    justify-content: center;
+}
+.youtube p{
+    position: absolute;
+    font-size: 2rem;
+    font-weight: 900;
 }
 .youtube-1{
     width: 50%;
     height: 30vh;
-    background-color: #ee4242;
+    padding: 3rem;
 }
 .youtube-2{
     width: 50%;
     height: 30vh;
-    background-color: aquamarine;
+    padding: 3rem;
 }
 /*CONTACT US*/
 .contact-box {
