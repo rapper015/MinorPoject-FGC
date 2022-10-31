@@ -4,10 +4,6 @@
 html{
 	font-size: 62.5%;
 }
-@media(max-width:400px){
-	html{
-		font-size:55%;
-}}
 * {
     margin: 0;
     padding: 0;
@@ -58,6 +54,44 @@ html, body {
     font-family: 'Roboto', sans-serif;
     display: block;
 }
+/*RESPONSIVE NAV BAR*/
+.nav_button{
+    z-index: 100;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+    
+}
+.nav_button .bar1{
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: white;
+    transform: translate(50%);
+    transform: rotate(45deg);
+    transition: all 0.3s ease-in-out;
+}
+.nav_button .bar2{
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    border-radius: 10px;
+    background-color:white;
+    transform: translate(50%);
+    transform: rotate(-45deg);
+    transition: all 0.3s ease-in-out;
+}
+.nav_button.open .bar1{
+    transform: rotate(-45deg);
+}
+.nav_button.open .bar2{
+    transform: rotate(45deg);
+} 
 
 .login::after {
     content: "";
@@ -798,4 +832,17 @@ textarea:valid~label {
 .login-btn:active{
     background-color: white;
     color: black;
+}
+/*MEDIA QUERY*/
+@media(max-width:400px){
+	html{
+		font-size:55%;
+}}
+@media(max-width:925px){
+    .nav_button{
+        display: flex;
+    }
+    .menu{
+        display: none;
+    }
 }

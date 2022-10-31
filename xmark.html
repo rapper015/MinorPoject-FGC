@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<style>
+	.nav_button{
+		position: absolute;
+		width: 50px;
+		height: 50px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		transition: all 0.3s ease-in-out;
+		
+	}
+	.nav_button .bar1{
+		position: absolute;
+		height: 10px;
+		width: 100%;
+		border-radius: 10px;
+		background-color: black;
+		transform: translate(50%);
+		transform: rotate(45deg);
+		transition: all 0.3s ease-in-out;
+	}
+	.nav_button .bar2{
+		position: absolute;
+		height: 10px;
+		width: 100%;
+		border-radius: 10px;
+		background-color: black;
+		transform: translate(50%);
+		transform: rotate(-45deg);
+		transition: all 0.3s ease-in-out;
+	}
+	.nav_button.open .bar1{
+		transform: rotate(-45deg);
+	}
+	.nav_button.open .bar2{
+		transform: rotate(45deg);
+	} 
+
+</style>
+<body>
+	<div class="nav_button">
+		<span class="bar1" id="bar1"></span>
+		<span class="bar2" id="bar2"></span>
+	</div>
+	<script>
+		const nav_button=document.querySelector('.nav_button');
+		let nav_buttonopen=false;
+		nav_button.addEventListener('click', () => {
+			if(!nav_buttonopen){
+				nav_button.classList.add('open');
+				nav_buttonopen=true;
+			}else{
+				nav_button.classList.remove('open');
+				nav_buttonopen=false;
+			}
+		})
+	</script>
+</body>
+</html>
