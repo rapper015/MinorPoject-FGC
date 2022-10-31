@@ -841,7 +841,7 @@ textarea:valid~label {
     background-repeat: no-repeat;
     width:100%;
     min-height: 80vh;
-    padding: 5rem;
+    padding: 3rem;
 }
 .qus-item{
     background-color: #283042;
