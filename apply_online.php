@@ -1,53 +1,6 @@
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Film Ginny Corporation</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-    <nav class="navbar">
-        <div class="logo">
-            <a href="index.html"><img src="images/logo.png" width="90" height="90" ALT="align box" ALIGN=CENTER></a>
-        </div>
-        <div class="menu">
-            <ul>
-                <li><a href="#" id="aboutus">About Us</a>
-                    <ul>
-                        <li><a href="our_mission.html">Our Mission</a></li>
-                        <li><a href="our_consitution.html">Our Constitution</a></li>
-                        <li><a href="people_at_fgc.html">People at FGC</a></li>
-                        <li><a href="history_of_fgc.html">History of FGC</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Become A Member</a>
-                    <ul>
-                        <li><a href="#">FGC Membership Rules</a></li>
-                        <li><a href="apply_online.html">Apply Online</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Upload Your Register Work</a>
-                </li>
-                <li><a href="#">Ask FGC</a>
-                    <ul>
-                        <li><a href="#">File A Complaint</a></li>
-                        <li><a href="faq.html">Frequently Asked Questions</a></li>
-                    </ul>
-                </li>
-                <li><a href="contact_us.html">Contact Us</a></li>
-            </ul>
-        </div>
-            <ul>
-                <li><div class="login"><a href="login.html">Login</a></div></li>
-            </ul>
-    </nav>
+<?php
+include "include/header.php";
+?>
     <div class="apply_online">
         <div class="overlay">
             <div class="center">
@@ -70,7 +23,15 @@
                 </div>
                 <div class="input-group_applyonline">
                     <input type="number" id="name" required>
-                    <label for="name">First Name</label>
+                    <label for="name">User Name</label>
+                </div>
+                <div class="input-group_applyonline">
+                    <input type="password" id="name" required>
+                    <label for="name">Password</label>
+                </div>
+                <div class="input-group_applyonline">
+                    <input type="password" id="name" required>
+                    <label for="name"> Re-Enter Password</label>
                 </div>
                 <p><strong>MEMBERSHIP CATEGORY</strong><br><br>
                     Choose One. Additional documents will be required as ELIGIBILITY PROOF for Associate, Regular/Life
@@ -156,24 +117,6 @@
             </div>
         </div>
     </div>
-    <footer>
-        <div class="footer-top">
-            <h3>Film Ginny Corporation</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi itaque repellendus quo aspernatur cum
-                imped</p>
-            <ul class="socials">
-                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-            </ul>
-        </div>
-        <div class="footer-bottom">
-            <p>Copyright &copy;2022 Film Ginny Corporation. Designed By <span>Developers Squard Group</span></p>
-        </div>
-    </footer>
-
-
-</body>
-
-</html>
+    <?php
+    include "include/footer.php";
+    ?>
