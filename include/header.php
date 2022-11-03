@@ -23,28 +23,24 @@
         </div>
         <div class="menu">
             <ul>
-                <li><a href="#">Become A Member</a>
-                        <ul>
-                            <li><a href="faq.php">FGC Membership Rules</a></li>
-                            <li><a href="apply_online.php">Apply Online</a></li>
-                        </ul>
+                <li><a href="apply_online.php">Register</a>
                 </li>
-                <li><a href="">Upload Your Register Work</a>
-                </li>
-                <li><a href="#">Ask FGC</a>
+                <!-- <li><a href="">Upload Your Register Work</a>
+                </li> -->
+                <!-- <li><a href="#">Ask FGC</a>
                         <ul>
                             <li><a href="file_complaint.php">File A Complaint</a></li>
                             <li><a href="faq_ask.php">Frequently Asked Questions</a></li>
                         </ul>
-                </li>
+                </li> -->
                 <li><a href="contact_us.php">Contact Us</a></li>
-                <li><a href="#" id="aboutus">About Us</a>
-                    <ul>
+                <li><a href="our_mission.php" id="aboutus">About Us</a>
+                    <!-- <ul>
                         <li><a href="our_mission.php">Our Mission</a></li>
                         <li><a href="our_consitution.php">Our Constitution</a></li>
                         <li><a href="people_at_fgc.php">People at FGC</a></li>
                         <li><a href="history_of_fgc.php">History of FGC</a></li>
-                    </ul>
+                    </ul> -->
                 </li>
             </ul>
         </div>

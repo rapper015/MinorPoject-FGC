@@ -17,10 +17,10 @@ include "include/header.php";
                     <input type="number" id="name" required>
                     <label for="name">Full name</label>
                 </div>
-                <div class="input-group_applyonline">
+                <!-- <div class="input-group_applyonline">
                     <input type="number" id="name" required>
                     <label for="name">Screen Name</label>
-                </div>
+                </div> -->
                 <div class="input-group_applyonline">
                     <input type="number" id="name" required>
                     <label for="name">User Name</label>
@@ -33,24 +33,22 @@ include "include/header.php";
                     <input type="password" id="name" required>
                     <label for="name"> Re-Enter Password</label>
                 </div>
-                <p><strong>MEMBERSHIP CATEGORY</strong><br><br>
-                    Choose One. Additional documents will be required as ELIGIBILITY PROOF for Associate, Regular/Life
-                    Membership.</p><br>
+                <p><strong>REGISTER AS ?</strong><br><br></p><br>
                     <div id="member">
+                        <!-- <div id="mem">
+                       <p>Writer</p><input type="radio" name="member" value="Life Member">
+                    </div> -->
                         <div id="mem">
-                       <p>Life Member</p><input type="radio" name="member" value="Life Member">
+                        <p>Writer</p><input type="radio" name="member" value="Regular Member">
                     </div>
-                        <div id="mem">
-                        <p>Regular Member</p><input type="radio" name="member" value="Regular Member">
-                    </div>
-                        <div id="mem">
+                        <!-- <div id="mem">
                         <p>Associate Member</p><input type="radio" name="member" value="Associate Member">
-                    </div>
+                    </div> -->
                         <div id="mem">
-                        <p>Fellow Member</p><input type="radio" name="member" value="Fellow Member">
+                        <p>Producer</p><input type="radio" name="member" value="Fellow Member">
                     </div>
             </div>
-                <strong>PERMANENT ADDRESS</strong> <br>
+                <!-- <strong>PERMANENT ADDRESS</strong> <br>
                 <textarea class="textarea" name="Address" id="" cols="20" rows="5"></textarea><br><br>
 
                 <div class="upload">
@@ -86,7 +84,7 @@ include "include/header.php";
                         Pen/Screen Name which is different from your name as per your Photo ID Proof.</p><br>
                         Upload File
                         <input type="file"><br><br>
-                </div>
+                </div> -->
                 <div class="input_field_terms">
                     <h4> <strong> SELF DECLARATION</strong></h4>
                     <p>I shall be solely responsible for managing and operating my SWA Account. By
