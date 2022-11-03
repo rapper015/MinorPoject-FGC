@@ -73,7 +73,7 @@
     </div>
     <div class="director">
         <strong><p>PRODUCER'S AREA</p></strong>
-        <a href="producers_area.html"><button id="directorArea">Click to Visit</button></a>
+        <a href="producers_area.php"><button id="directorArea">Click to Visit</button></a>
     </div>
     <footer>
         <div class="footer-top">

@@ -2,29 +2,27 @@
 include "include/header.php";
 include "include/databaseConnection.php";
 ?>
-    <div class="container">
-        <div class="row align-items-center justify-content-center">
-            <h1 class="text-center mt-5 mb-5">Register Your Complaint</h1>
-            <form  action="#" method="post" enctype="multipart/form-data">         
-                <div class="form-group mb-3">
-                    <!-- <label for="exampleInputPassword1">Name </label> -->
-                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter Name">
+    <div class="login_container">
+        <div id="overlay">
+            <div class="login_container-main">
+                <h1>REGISTER YOUR COMPLAINT</h1><br>
+            <div class="input-group">
+                <input type="text" id="name"required>
+                <label for="name"><i class="fa-solid fa-user"></i>Name</label>
+            </div>
+            <div class="input-group">
+                <input type="text" id="name"required>
+                <label for="name"><i class="fa-solid fa-user"></i>Email</label>
+            </div>
+            <div class="input-group">
+                <input type="text" id="name"required>
+                <label for="name"><i class="fa-solid fa-user"></i>Phone Number</label>
+            </div>
+            <div class="input-group">
+                    <textarea id="message" rows="8" required></textarea>
+                    <label for="message"><i class="fa-solid fa-comments"></i>Your Message</label>
                 </div>
-                <div class="form-group mb-3">
-                    <!-- <label for="exampleInputEmail1">Email address</label> -->
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">     
-                </div>
-                <div class="form-group mb-3">
-                    <!-- <label for="exampleInputPassword1">Phone Number</label> -->
-                    <input type="number" class="form-control" id="exampleInputPassword1" placeholder="Enter Phone Number">
-                </div>
-                <div class="form-group mb-3">
-                    
-                     <textarea class="from-check-input " name="" id="" cols="50" rows="5" placeholder="Enter Message"></textarea>
-                    
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
+            <input type="submit" value="SUBMIT" class="login-btn">
         </div>
     </div>
 

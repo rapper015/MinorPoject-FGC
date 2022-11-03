@@ -19,7 +19,7 @@ include "include/header.php";
                 </div>
                 <div class="input-group_applyonline">
                     <input type="number" id="name" required>
-                    <label for="name">Screen Name/Frame Name</label>
+                    <label for="name">Screen Name</label>
                 </div>
                 <div class="input-group_applyonline">
                     <input type="number" id="name" required>

@@ -333,7 +333,7 @@ footer {
 .contact-box {
     display: flex;
     font-family: 'Roboto', sans-serif;
-    background-image: url(/images/background.jpg);
+    background-image: url(https://images.unsplash.com/photo-1570215171323-4ec328f3f5fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -529,7 +529,7 @@ textarea:valid~label {
     font-family: 'Roboto', sans-serif;
     width: 100%;
     min-height: 220vh;
-    background-image: url(images/background.jpg);
+    background-image: url(https://images.unsplash.com/photo-1570215171323-4ec328f3f5fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -659,6 +659,7 @@ textarea:valid~label {
      "left_filter block3"
      "left_filter block4";
      text-decoration: none;
+     font-size: 1.5rem;
      color: black;
 }
     .producer_area p{
@@ -786,7 +787,7 @@ textarea:valid~label {
 .login_container{
     width: 100%;
     height: 100vh;
-    background-image: url(images/background.jpg);
+    background-image: url(https://images.unsplash.com/photo-1570215171323-4ec328f3f5fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
     background-size: cover;
     background-repeat: no-repeat;
     font-size: 2rem;
@@ -830,7 +831,7 @@ textarea:valid~label {
 }
 /*FAQ*/
 .faq{
-    background-image: url(images/background.jpg);
+    background-image: url(https://images.unsplash.com/photo-1570215171323-4ec328f3f5fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
     background-size: cover;
     background-repeat: no-repeat;
     width:100%;
