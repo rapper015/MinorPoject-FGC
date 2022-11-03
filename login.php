@@ -15,7 +15,7 @@ include "include/header.php";
             </div>
             <a href="#">Forget Password?</a><br>
             <input type="submit" value="LOGIN" class="login-btn">
-            <br> Not a Member?<a href="apply_online.html" style="color:  #ee4242;;"> Sign Up</a>
+            <br> Not a Member?<a href="apply_online.php" style="color:  #ee4242;;"> Sign Up</a>
         </div>
         </div>
     </div>
