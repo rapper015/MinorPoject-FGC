@@ -44,12 +44,12 @@ include "include/header.php";
                     <div class="reachusitem">
                         <i class="fa-solid fa-envelope"></i>
                         <strong>Email: </strong>
-                        contactus@example.com
+                        <a href="mailto:contactus@example.com">contactus@example.com</a>
                     </div>
                     <div class="reachusitem">
                         <i class="fa-solid fa-earth-oceania"></i>
                         <strong>Website: </strong>
-                        www.FilmGinnyCorporation.com
+                       <a href="www.filmginnycorporation.com">www.FilmGinnyCorporation.com</a>
                     </div>
                 </div>
             </div>

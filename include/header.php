@@ -22,8 +22,8 @@
             <a href="index.php"><img src="images/logo.png" width="90" height="90" ALT="align box" ALIGN=CENTER></a>
         </div>
         <div class="menu">
-            <ul>
-                <li><a href="apply_online.php">Register</a>
+            <ul>  
+                <li><div class="apply_ani"><a href="apply_online.php">Register</a></div>
                 </li>
                 <!-- <li><a href="">Upload Your Register Work</a>
                 </li> -->
@@ -33,8 +33,8 @@
                             <li><a href="faq_ask.php">Frequently Asked Questions</a></li>
                         </ul>
                 </li> -->
-                <li><a href="contact_us.php">Contact Us</a></li>
-                <li><a href="our_mission.php" id="aboutus">About Us</a>
+                <li><div class="contact_ani"><a href="contact_us.php">Contact Us</a></div></li>
+                <li><div class="about_ani"><a href="our_mission.php" id="aboutus">About Us</a></div>
                     <!-- <ul>
                         <li><a href="our_mission.php">Our Mission</a></li>
                         <li><a href="our_consitution.php">Our Constitution</a></li>

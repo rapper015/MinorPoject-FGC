@@ -86,7 +86,7 @@ include "include/header.php";
                         <input type="file"><br><br>
                 </div> -->
                 <div class="input_field_terms">
-                    <h4> <strong> SELF DECLARATION</strong></h4>
+                    <!-- <h4> <strong> SELF DECLARATION</strong></h4>
                     <p>I shall be solely responsible for managing and operating my SWA Account. By
                         submitting the online application form, I solemnly declare that I have never been a SWA
                         member in the past and the particulars mentioned in the online form are true and correct
@@ -100,10 +100,10 @@ include "include/header.php";
                         of
                         SWA Constitution from the link
                         before applying for membership. I declare that I have fully understood all the content of this
-                        Declaration By the Applicant.</p><br><br>
+                        Declaration By the Applicant.</p><br><br> -->
 
                      <div class="input_field_checkbox">   
-                    <p>I have read, understood and agree with the Self Declaration</p>
+                    <p>I hereby, declare that all the above mentioned information is correct</p>
                     <span class="checkmark"></span>
                     <input type="checkbox">
                     </span><br>
