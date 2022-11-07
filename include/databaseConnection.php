@@ -9,7 +9,7 @@ class DatabaseClass
     public  
     function __construct()  
     {  
-        mysql_connect($this -> host, $this -> username, $this -> password, $this -> db) or die(mysql_error("database"));  
+        mysqli_connect($this -> host, $this -> username, $this -> password, $this -> db) or die(mysqli_error("fgc"));  
     } 
 }
 ?>

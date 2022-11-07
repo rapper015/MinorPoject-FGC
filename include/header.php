@@ -1,5 +1,10 @@
+<?php
+session_start();
+if(isset($_SESSION['loggedin']) && $_SESSION['loggedin']==true){
+    $check=true;
+}
+?> 
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,28 +28,35 @@
         </div>
         <div class="menu">
             <ul>  
-                <li><div class="apply_ani"><a href="apply_online.php">Register</a></div>
-                </li>
-                <!-- <li><a href="">Upload Your Register Work</a>
-                </li> -->
-                <!-- <li><a href="#">Ask FGC</a>
-                        <ul>
-                            <li><a href="file_complaint.php">File A Complaint</a></li>
-                            <li><a href="faq_ask.php">Frequently Asked Questions</a></li>
-                        </ul>
-                </li> -->
+                <li><div class="apply_ani"><a href="apply_online.php">Register</a></div></li>
                 <li><div class="contact_ani"><a href="contact_us.php">Contact Us</a></div></li>
                 <li><div class="about_ani"><a href="our_mission.php" id="aboutus">About Us</a></div>
-                    <!-- <ul>
-                        <li><a href="our_mission.php">Our Mission</a></li>
-                        <li><a href="our_consitution.php">Our Constitution</a></li>
-                        <li><a href="people_at_fgc.php">People at FGC</a></li>
-                        <li><a href="history_of_fgc.php">History of FGC</a></li>
-                    </ul> -->
-                </li>
+                <?php
+                if($check=true){
+                    ?>
+                    <li><div class="about_ani"><a href="<?php echo $_SESSION['pagelink'];?>" id="dashboard">Dashboard</a></div></li>
+                    <?php
+                }
+                ?>
             </ul>
         </div>
-        <ul>
-            <li><div class="login"><a href="login.php">Login</a></div></li>
+        <?php
+            if(!$check){
+                ?>
+                <ul>
+        <li><div class="login"><a href="login.php">Login</a></div></li>
         </ul>
+        <?php
+            }
+        ?>
+        
+        <?php
+            if($check=true){
+                ?>
+                <ul>
+        <li><div class="login"><a href="logout.php">Logout</a></div></li>
+        </ul>
+        <?php
+            }
+        ?>
     </nav>
