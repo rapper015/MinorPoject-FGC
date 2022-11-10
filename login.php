@@ -43,7 +43,7 @@ $obj = new Database();
                 <label for="name"><i class="fa-solid fa-key"></i>Password</label>
             </div>
             <a href="#">Forget Password?</a><br>
-            <a href="#"><input type="submit" value="LOGIN" name="login" class="login-btn"></a>
+            <input type="submit" value="LOGIN" name="login" class="login-btn">
             <br> Not a Member?<a href="apply_online.php" style="color:  #ee4242;;"> Sign Up</a>
         </div>
         </div>

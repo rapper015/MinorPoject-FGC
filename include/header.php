@@ -1,7 +1,9 @@
 <?php
 session_start();
 if(isset($_SESSION['loggedin']) && $_SESSION['loggedin']==true){
-    $check=true;
+    $loggedin=true;
+}else{
+    $loggedin=false;
 }
 ?> 
 <html lang="en">
@@ -28,20 +30,26 @@ if(isset($_SESSION['loggedin']) && $_SESSION['loggedin']==true){
         </div>
         <div class="menu">
             <ul>  
-                <li><div class="apply_ani"><a href="apply_online.php">Register</a></div></li>
-                <li><div class="contact_ani"><a href="contact_us.php">Contact Us</a></div></li>
-                <li><div class="about_ani"><a href="our_mission.php" id="aboutus">About Us</a></div>
                 <?php
-                if($check=true){
+                if(!$loggedin){
                     ?>
-                    <li><div class="about_ani"><a href="<?php echo $_SESSION['pagelink'];?>" id="dashboard">Dashboard</a></div></li>
+                    <li><div class="apply_ani"><a href="apply_online.php">Register</a></div></li>
                     <?php
                 }
                 ?>
+                <?php
+                if($loggedin){
+                    ?>
+                    <li><div class="about_ani"><a href="<?php echo $_SESSION['pagelink'];?>">Dashboard</a></div></li>
+                    <?php
+                }
+                ?>
+                <li><div class="contact_ani"><a href="contact_us.php">Contact Us</a></div></li>
+                <li><div class="about_ani"><a href="our_mission.php" id="aboutus">About Us</a></div>
             </ul>
         </div>
         <?php
-            if(!$check){
+            if(!$loggedin){
                 ?>
                 <ul>
         <li><div class="login"><a href="login.php">Login</a></div></li>
@@ -51,7 +59,7 @@ if(isset($_SESSION['loggedin']) && $_SESSION['loggedin']==true){
         ?>
         
         <?php
-            if($check=true){
+            if($loggedin){
                 ?>
                 <ul>
         <li><div class="login"><a href="logout.php">Logout</a></div></li>

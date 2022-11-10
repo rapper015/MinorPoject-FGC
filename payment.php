@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<?php
+	include 'database.php';
+	$obj = new Database();
+?>
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>FGC-Payment</title>
+	<link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
 	<link rel="stylesheet" href="css/payment.css">
 </head>
 
@@ -13,34 +17,34 @@
 	<p class="title">FILM GINNY CORPORATION</p>
 	<p class="sub-title">PAYMENT GATEWAY</p>
 	<div class="container">
-		<form action="">
+		<form action="payment_complete.php" method="POST">
 			<div class="row">
 				<div class="col">
 					<h3 class="title">billing address</h3>
 					<div class="inputBox">
 						<span>full name :</span>
-						<input type="text" placeholder="john deo">
+						<input type="text" placeholder="john deo" name="fullname">
 					</div>
 					<div class="inputBox">
 						<span>email :</span>
-						<input type="email" placeholder="example@example.com">
+						<input type="email" placeholder="example@example.com" name="email">
 					</div>
 					<div class="inputBox">
 						<span>address :</span>
-						<input type="text" placeholder="room - street - locality">
+						<input type="text" placeholder="room - street - locality" name="address">
 					</div>
 					<div class="inputBox">
 						<span>city :</span>
-						<input type="text" placeholder="mumbai">
+						<input type="text" placeholder="mumbai" name="city">
 					</div>
 					<div class="flex">
 						<div class="inputBox">
 							<span>state :</span>
-							<input type="text" placeholder="india">
+							<input type="text" placeholder="india" name="state">
 						</div>
 						<div class="inputBox">
 							<span>zip code :</span>
-							<input type="text" placeholder="123 456">
+							<input type="text" placeholder="123 456" name="zipcode">
 						</div>
 					</div>
 
@@ -77,7 +81,7 @@
 				</div>
 			</div>
 			<button>
-			<button type="submit" value="proceed to checkout" class="submit-btn" style="color:white;"><a href="payment_complete.html">Proceed To Checkout</a></button>
+			<button type="submit" value="proceed to checkout" class="submit-btn" style="color:white;" name="submit"><a href="payment_complete.php">Proceed To Checkout</a></button>
 		</form>
 	</div>
 </body>

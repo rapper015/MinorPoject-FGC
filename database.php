@@ -36,9 +36,9 @@ use LDAP\Result;
 			$sql= "INSERT INTO $table ($table_columns) VALUES ('$table_value')";
 
 			if($this->mysqli->query($sql)){
-				echo '<script>alert("SCRIPT UPLOADED")</script>';
+				echo '<script>alert("DONE")</script>';
 			}else{
-				echo '<script>alert("SCRIPT NOT UPLOADED")</script>';
+				echo '<script>alert("NOT DONE")</script>';
 			}
 		}
 		//UPDATE
@@ -55,9 +55,9 @@ use LDAP\Result;
 			}
 
 			if($this->mysqli->query($sql)){
-				echo '<script>alert("SCRIPT UPDATED")</script>';
+				echo '<script>alert("DONE")</script>';
 			}else{
-				echo '<script>alert("SCRIPT NOT UPDATED")</script>';
+				echo '<script>alert("NOT DONE")</script>';
 			}
 		}
 		
@@ -69,9 +69,9 @@ use LDAP\Result;
 				$sql .=" WHERE sno='$where'";
 			}
 			if($this->mysqli->query($sql)){
-				echo '<script>alert("SCRIPT DELETED")</script>';
+				echo '<script>alert("DONE")</script>';
 			}else{
-				echo '<script>alert("SCRIPT NOT DELETED")</script>';
+				echo '<script>alert("NOT DONE")</script>';
 			}
 		}
 		//SELECT
@@ -91,7 +91,7 @@ use LDAP\Result;
 				$res=$this->mysqli->query($sql);
 				return $res;
 			}else{
-				echo '<script>alert("NOT UPDATED")</script>';
+				echo '<script>alert("NOT DONE")</script>';
 			}
 		}
 		public function getResult(){

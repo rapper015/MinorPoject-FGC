@@ -20,10 +20,10 @@ include "include/header.php";
             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/XZszextv6yE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </div>
-    <div class="director">
+    <!-- <div class="director">
         <strong><p>PRODUCER'S AREA</p></strong>
         <a href="producers_area.php"><button id="directorArea">Click to Visit</button></a>
-    </div>
+    </div> -->
     <?php
     include "include/footer.php";
     ?>

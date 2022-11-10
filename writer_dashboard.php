@@ -5,6 +5,8 @@ $obj = new Database();
 ?>
 <?php
 $table='upload';
+$email=$_SESSION['email'];
+$fullname=$_SESSION['fullname'];
 if(isset($_POST['upload']))
 {   
     $title=$_POST['scpt_title'];
@@ -15,7 +17,7 @@ if(isset($_POST['upload']))
     $upload_path= 'upload/' .$file;
     move_uploaded_file($tmpfile,$upload_path);
 
-    $obj -> insert($table,['title'=>$title,'summary'=>$summary,'file'=>$file]);
+    $obj -> insert($table,['title'=>$title,'summary'=>$summary,'file'=>$file,'email'=>$email,'fullname'=>$fullname]);
 }
 // $obj -> update($table,['title'=>'BC MOVIE','summary'=>'IDEA STOLEN','file'=>'fuckup.PDF'],'sno="16"');
 //$obj -> delete($table,'sno="13"');
@@ -65,7 +67,7 @@ if(isset($_POST['upload']))
                 </tr>
                 <?php
                 $table = "upload";
-                $res = $obj->select($table);
+                $res = $obj->select($table,null,$email,null);
                 while ($row = mysqli_fetch_array($res)) {
                 ?>
                     <tr>
