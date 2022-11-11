@@ -10,26 +10,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>FGC-Download</title>
 	<link rel="stylesheet" href="css/payment.css">
+	<link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
 </head>
 <?php
-$table = 'payment';
-if (isset($_POST['submit'])) {
-    $fullname = $_POST['fullname'];
-    $email = $_POST['email'];
-    $address = $_POST['address'];
-    $city = $_POST['city'];
-	$state = $_POST['state'];
-	$zipcode = $_POST['zipcode'];
-
-
-    $obj->insert($table, ['fullname' => $fullname, 'email' => $email, 'address' => $address, 'city' => $city, 'state' => $state, 'zipcode' => $zipcode]);
-}
+	$file=$_GET['id'];
 ?>
 <body>
 	<p class="title">FILM GINNY CORPORATION</p>
 	<p class="sub-title">PAYMENT SUCCESSFUL</p>
 	<div class="download">
-		<a href="SCRIPT.pdf">DOWNLOAD FILE<i class="fa-solid fa-file-arrow-down"></i></a>
+		<a href="upload/<?php echo $file?>" target="_blank">DOWNLOAD FILE</a>
+	</div>
+	<div class="download">
+		 <a href="index.php" style="width: 150px; height:50px; font-size:20px; text-align:center;background-color:coral">HOME PAGE</a>
 	</div>
 </body>
 </html>

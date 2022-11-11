@@ -17,16 +17,18 @@ if(isset($_SESSION['loggedin']) && $_SESSION['loggedin']==true){
         crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
 		<script src="https://kit.fontawesome.com/0ef8057b2b.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <nav class="navbar">
+        <div class="logo">
+            <a href="index.php"><img src="images/logo.png" width="90" height="90" ALT="align box" ALIGN=CENTER></a>
+        </div>
+        <div class="phone_navbar">
         <div class="nav_button">
             <span class="bar1" ></span>
             <span class="bar2" ></span>
-        </div>
-        <div class="logo">
-            <a href="index.php"><img src="images/logo.png" width="90" height="90" ALT="align box" ALIGN=CENTER></a>
         </div>
         <div class="menu">
             <ul>  
@@ -47,6 +49,7 @@ if(isset($_SESSION['loggedin']) && $_SESSION['loggedin']==true){
                 <li><div class="contact_ani"><a href="contact_us.php">Contact Us</a></div></li>
                 <li><div class="about_ani"><a href="our_mission.php" id="aboutus">About Us</a></div>
             </ul>
+        </div>
         </div>
         <?php
             if(!$loggedin){

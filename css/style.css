@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap');
-
 html{
 	font-size: 62.5%;
 }
@@ -56,13 +55,10 @@ html, body {
 }
 /*RESPONSIVE NAV BAR*/
 .nav_button{
-    z-index: 100;
-    position: absolute;
+    position: relative;
     height: 10px;
     width: 25px;
     display: none;
-    flex-direction: column;
-    justify-content: center;
     transition: all 0.3s ease-in-out;
     
 }
@@ -470,7 +466,7 @@ textarea:valid~label {
 }
 
 .row .input-group {
-    flex-basis: 48%;
+    flex-basis: 100%;
 }
 
 .contactInfo {
@@ -945,25 +941,6 @@ max-height: 90rem;
 .qus-item:target .item-link .ion-md-arrow-dropright{
     display: block;
 }
-/*MEDIA QUERY*/
-@media(max-width:400px){
-	html{
-		font-size:55%;
-}}
-@media(max-width:925px){
-    .nav_button{
-        display: flex;
-    } 
-    .menu {
-        display: none;
-    }
-    .menu ul{
-        flex-direction: column;
-    }
-    .menu.active {
-        display: flex;
-    }
-}
 /*DASHBOARD*/
 .dashboard {
     width: 100%;
@@ -1039,4 +1016,56 @@ max-height: 90rem;
 .dashboard_writer_bottom th,
 .dashboard_writer_bottom td{
     padding: 12px 15px;
+}
+.fa-solid{
+    width: 50px;
+    height: 50px;
+}
+.fa-up{
+    color: orangered;
+}
+.fa-down{
+    color: rgb(0, 132, 255);
+}
+/*MEDIA QUERY*/
+@media(max-width:400px){
+	html{
+		font-size:45%;
+}}
+@media(max-width:925px){
+    .nav_button{
+        display: flex;
+        position: absolute;
+    }
+    .phone_navbar{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navbar{
+        justify-content: space-between;
+    } 
+    .menu {
+        display: none;
+        margin-top: 20px;
+    }
+    .menu ul{
+        flex-direction: column;
+    }
+    .menu.active {
+        display: flex;
+    }
+    .input-group_applyonline{
+        width: 70%;
+    }
+    .login_container-main{
+        width: 70%;
+    }
+    .contact-box{
+        display: block;
+    }
+    .contact-left{
+        flex-basis: 70%;
+    }
 }

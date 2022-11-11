@@ -30,8 +30,9 @@ if (!isset($_SESSION['loggedin']) || ($_SESSION['loggedin']) != true) {
                 ?>
                     <tr>
                         <td><?php echo $row['fullname'] ?><br><?php echo $row['email'] ?></td>
-                        <td><a href="payment.php?<?php echo $row['file'] ?>"><?php echo $row['title'] ?></a></td>
+                        <td><a href="payment.php?id=<?php echo $row['file'] ?>"><?php echo $row['title'] ?></a></td>
                         <td><?php echo $row['summary'] ?></td>
+                        <td><i class="fas fa-sort-up"></i><br><br><i class="fas fa-sort-down"></i></td>
                     </tr>
                 <?php
                 }

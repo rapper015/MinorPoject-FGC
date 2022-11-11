@@ -12,12 +12,26 @@
 	<link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
 	<link rel="stylesheet" href="css/payment.css">
 </head>
+<?php
+$file=$_GET['id'];
+$table = 'payment';
+if (isset($_POST['submit'])) {
+    $fullname = $_POST['fullname'];
+    $email = $_POST['email'];
+    $address = $_POST['address'];
+    $city = $_POST['city'];
+	$state = $_POST['state'];
+	$zipcode = $_POST['zipcode'];
 
+
+    $obj->insert($table, ['fullname' => $fullname, 'email' => $email, 'address' => $address, 'city' => $city, 'state' => $state, 'zipcode' => $zipcode]);
+}
+?>
 <body>
 	<p class="title">FILM GINNY CORPORATION</p>
 	<p class="sub-title">PAYMENT GATEWAY</p>
 	<div class="container">
-		<form action="payment_complete.php" method="POST">
+		<form action="payment.php" method="POST">
 			<div class="row">
 				<div class="col">
 					<h3 class="title">billing address</h3>
@@ -80,10 +94,8 @@
 					</div>
 				</div>
 			</div>
-			<button>
-			<button type="submit" value="proceed to checkout" class="submit-btn" style="color:white;" name="submit"><a href="payment_complete.php">Proceed To Checkout</a></button>
+			<button type="submit"  value="proceed to checkout" class="submit-btn" style="color:white;" name="submit"><a href="payment_complete.php?id=<?php echo $file ?>">Proceed To Checkout</a></button>
 		</form>
 	</div>
 </body>
-
 </html>
