@@ -11,9 +11,10 @@ if (isset($_POST['submit'])) {
     $email = $_POST['email'];
     $message = $_POST['message'];
 
-
+    
     $obj->insert($table, ['name' => $name, 'phone' => $phone, 'email' => $email, 'message' => $message]);
 }
+   
 ?>
 <div class="contactus">
     <div class="contact-box">
@@ -62,28 +63,12 @@ if (isset($_POST['submit'])) {
                 <div class="reachusitem">
                     <i class="fa-solid fa-earth-oceania"></i>
                     <strong>Website: </strong>
-                    <a href="www.filmginnycorporation.com">www.FilmGinnyCorporation.com</a>
+                    <a href="www.filmginny.com">www.FilmGinny.com</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<script src="https://smtpjs.com/v3/smtp.js"></script>
-<script>
-    function sendEmail() {
-        Email.send({
-            Host: "smtp.gmail.com",
-            Username: "rapper015xd@gmail.com",
-            Password: "q=Qmq>C%9#X5WcF?",
-            To: "rapper015xd@gmail.com",
-            From: document.getElementById('email').Value,
-            Subject: "Thank You for Contacting Us",
-            Body: "Thank you for getting in touch! We appreciate you contacting us. One of our customer happiness members will be getting back to you shortly.While we do our best to answer your queries quickly, it may take about 10 hours to receive a response from us during peak hours.Thanks in advance for your patience.Have a great day!"
-        }).then(
-            message => alert(message)
-        );
-    }
-</script>
 <?php
 include "include/footer.php";
 ?>

@@ -954,6 +954,7 @@ max-height: 90rem;
 .writer{
     background-image: url(https://images.unsplash.com/photo-1598620617148-c9e8ddee6711?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -1067,5 +1068,20 @@ max-height: 90rem;
     }
     .contact-left{
         flex-basis: 70%;
+    }
+    .dash_title h3{
+        font-size: 2rem;
+    }
+    .dashboard_writer_bottom{
+        margin: 0rem;
+    }
+    .contact-left form{
+        font-size: 1rem;
+    }
+    .menu{
+        position: absolute;
+    }
+    .reachusitem{
+        display: inline-block;
     }
 }
