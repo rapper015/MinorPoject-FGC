@@ -12,22 +12,41 @@ $obj = new Database();
             $fullname=$_POST['fullname'];
             $password=$_POST['password'];
             $member=$_POST['member'];
-        
-            $obj -> insert($table,['email'=>$email,'phone'=>$phone,'fullname'=>$fullname,'password'=>$password,'member'=>$member]);
-            session_start();
-                        $_SESSION['loggedin']=true;
-                        $_SESSION['email']=$email;
-                 if($member== "writer"){
-                        $_SESSION['fullname']=$fullname;
-                        $_SESSION['pagelink']='writer_dashboard.php';
-                        header("location: writer_dashboard.php");
-                }
-                elseif($member== "producer"){
-                        $_SESSION['fullname']=$fullname;
-                        $_SESSION['pagelink']='producer_dashboard.php';
-                        header("location: producer_dashboard.php");
             
-        }
+            $res=$obj -> select($table,null,$email,null);
+            if(mysqli_num_rows($res)>0){
+                echo '<div class="dialog_container" id="dialog_container">
+				<div class="dialogbox">
+								<p>EMAIL ALREADY IN USE</p>
+								<button id="close">CLOSE</button>
+							</div>
+				</div>
+				<script>
+	const dialog_container=document.getElementById("dialog_container");
+	const close=document.getElementById("close");
+
+	close.addEventListener("click" , () => {
+	dialog_container.classList.add("close");
+	})
+</script>';
+            }
+            else{
+                $obj -> insert($table,['email'=>$email,'phone'=>$phone,'fullname'=>$fullname,'password'=>$password,'member'=>$member],null);
+                session_start();
+                            $_SESSION['loggedin']=true;
+                            $_SESSION['email']=$email;
+                     if($member== "writer"){
+                            $_SESSION['fullname']=$fullname;
+                            $_SESSION['pagelink']='writer_dashboard.php';
+                            header("location: writer_dashboard.php");
+                    }
+                    elseif($member== "producer"){
+                            $_SESSION['fullname']=$fullname;
+                            $_SESSION['pagelink']='producer_dashboard.php';
+                            header("location: producer_dashboard.php");
+                
+            }
+            }
     }
     ?>
     <form action="apply_online.php" method="POST">

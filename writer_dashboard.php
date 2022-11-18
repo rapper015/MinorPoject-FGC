@@ -11,16 +11,15 @@ if(isset($_POST['upload']))
 {   
     $title=$_POST['scpt_title'];
     $summary=$_POST['scpt_summary'];
+    $check="upload";
 
     $file=rand(100,1000) .  "-" . $_FILES['file']['name'];
     $tmpfile = $_FILES['file']['tmp_name'];
     $upload_path= 'upload/' .$file;
     move_uploaded_file($tmpfile,$upload_path);
 
-    $obj -> insert($table,['title'=>$title,'summary'=>$summary,'file'=>$file,'email'=>$email,'fullname'=>$fullname]);
+    $obj -> insert($table,['title'=>$title,'summary'=>$summary,'file'=>$file,'email'=>$email,'fullname'=>$fullname],$check);
 }
-// $obj -> update($table,['title'=>'BC MOVIE','summary'=>'IDEA STOLEN','file'=>'fuckup.PDF'],'sno="16"');
-//$obj -> delete($table,'sno="13"');
 ?>
  <?php
      if(!isset($_SESSION['loggedin']) || ($_SESSION['loggedin'])!=true){

@@ -28,7 +28,7 @@ use LDAP\Result;
 			}
 		}
 		//INSERT
-		public function insert($table, $param=array())
+		public function insert($table, $param=array(),$check)
 		{
 			$table_columns= implode(',', array_keys($param));
 			$table_value= implode("','", $param);
@@ -36,7 +36,8 @@ use LDAP\Result;
 			$sql= "INSERT INTO $table ($table_columns) VALUES ('$table_value')";
 
 			if($this->mysqli->query($sql)){
-				echo '<div class="dialog_container" id="dialog_container">
+				if($check=="upload"){
+					echo '<div class="dialog_container" id="dialog_container">
 				<div class="dialogbox">
 								<p>SCRIPT UPLOADED SUCCESFULLY</p>
 								<button id="close">CLOSE</button>
@@ -50,6 +51,23 @@ use LDAP\Result;
 	dialog_container.classList.add("close");
 	})
 </script>';
+				}
+				elseif($check=="contact"){
+					echo '<div class="dialog_container" id="dialog_container">
+				<div class="dialogbox">
+								<p>THANK YOU FOR CONTACTING US</p>
+								<button id="close">CLOSE</button>
+							</div>
+				</div>
+				<script>
+	const dialog_container=document.getElementById("dialog_container");
+	const close=document.getElementById("close");
+
+	close.addEventListener("click" , () => {
+	dialog_container.classList.add("close");
+	})
+</script>';
+				}
 			}else{
 				echo '<div class="dialog_container" id="dialog_container">
 				<div class="dialogbox">
@@ -93,6 +111,7 @@ use LDAP\Result;
 
 	close.addEventListener("click" , () => {
 	dialog_container.classList.add("close");
+	window.location.href = "writer_dashboard.php";
 	})
 </script>';
 			}else{
@@ -133,6 +152,7 @@ use LDAP\Result;
 
 	close.addEventListener("click" , () => {
 	dialog_container.classList.add("close");
+	window.location.href = "writer_dashboard.php";
 	})
 </script>';
 			}else{

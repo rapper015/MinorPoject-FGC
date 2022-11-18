@@ -27,6 +27,22 @@ $obj = new Database();
                         header("location: producer_dashboard.php");
                 }
             }
+            else{
+                echo '<div class="dialog_container" id="dialog_container">
+				<div class="dialogbox">
+								<p>EMAIL OR PASSWORD INCORRECT</p>
+								<button id="close">CLOSE</button>
+							</div>
+				</div>
+				<script>
+	const dialog_container=document.getElementById("dialog_container");
+	const close=document.getElementById("close");
+
+	close.addEventListener("click" , () => {
+	dialog_container.classList.add("close");
+	})
+</script>';
+            }
         }
     ?>
     <form action="login.php" method="POST">

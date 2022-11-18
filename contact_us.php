@@ -10,23 +10,10 @@ if (isset($_POST['submit'])) {
     $phone = $_POST['phone'];
     $email = $_POST['email'];
     $message = $_POST['message'];
+    $check="contact";
 
     
-    $obj->insert($table, ['name' => $name, 'phone' => $phone, 'email' => $email, 'message' => $message]);
-    echo '<div class="dialog_container" id="dialog_container">
-    <div class="dialogbox">
-                    <p>THANK YOU FOR CONTACTING US</p>
-                    <button id="close">CLOSE</button>
-                </div>
-    </div>
-    <script>
-const dialog_container=document.getElementById("dialog_container");
-const close=document.getElementById("close");
-
-close.addEventListener("click" , () => {
-dialog_container.classList.add("close");
-})
-</script>';
+    $obj->insert($table, ['name' => $name, 'phone' => $phone, 'email' => $email, 'message' => $message],$check);
 }
    
 ?>
