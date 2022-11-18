@@ -14,7 +14,21 @@ $obj = new Database();
             $member=$_POST['member'];
         
             $obj -> insert($table,['email'=>$email,'phone'=>$phone,'fullname'=>$fullname,'password'=>$password,'member'=>$member]);
+            session_start();
+                        $_SESSION['loggedin']=true;
+                        $_SESSION['email']=$email;
+                 if($member== "writer"){
+                        $_SESSION['fullname']=$fullname;
+                        $_SESSION['pagelink']='writer_dashboard.php';
+                        header("location: writer_dashboard.php");
+                }
+                elseif($member== "producer"){
+                        $_SESSION['fullname']=$fullname;
+                        $_SESSION['pagelink']='producer_dashboard.php';
+                        header("location: producer_dashboard.php");
+            
         }
+    }
     ?>
     <form action="apply_online.php" method="POST">
     <div class="apply_online">
@@ -56,9 +70,8 @@ $obj = new Database();
                 </div>
                 </div>
                 <div class="input_field_terms_submit">
-                <a href="#"><input type="submit" name="submit" value="REGISTER" class="btn"></a>
+                <a href="writer_dashboard.php"><input type="submit" name="submit" value="REGISTER" class="btn"></a>
                 </div>
-                
             </div>
         </div>
     </div>

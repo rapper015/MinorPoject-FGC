@@ -1085,3 +1085,48 @@ max-height: 90rem;
         display: inline-block;
     }
 }
+/*DIALOG BOX*/
+.dialog_container.close{
+    display: none;
+}
+.dialog_container{
+    z-index: 100;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba( 0,0,0,.5);
+}
+.dialogbox{
+    font-family: 'Roboto', sans-serif;
+    position: fixed;
+    height: 15rem;
+    width: 60rem;
+    top: 50%;
+    right: 34.2%;
+    flex-direction: column;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+.dialogbox p{
+    text-align: center;
+    font-size: large;
+}
+.dialogbox button{
+    width: 25%;
+    font-size: 15px;
+    transform: translate(150%);
+    border-color: black;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ee4242;
+    border: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.dialogbox button:active{
+    background-color:#ce3838;
+}

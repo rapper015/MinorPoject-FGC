@@ -1,5 +1,5 @@
+<link rel="stylesheet" href="css/style.css">
 <?php
-
 use LDAP\Result;
 
 	class Database{
@@ -36,9 +36,35 @@ use LDAP\Result;
 			$sql= "INSERT INTO $table ($table_columns) VALUES ('$table_value')";
 
 			if($this->mysqli->query($sql)){
-				echo '<script>alert("DONE")</script>';
+				echo '<div class="dialog_container" id="dialog_container">
+				<div class="dialogbox">
+								<p>SCRIPT UPLOADED SUCCESFULLY</p>
+								<button id="close">CLOSE</button>
+							</div>
+				</div>
+				<script>
+	const dialog_container=document.getElementById("dialog_container");
+	const close=document.getElementById("close");
+
+	close.addEventListener("click" , () => {
+	dialog_container.classList.add("close");
+	})
+</script>';
 			}else{
-				echo '<script>alert("NOT DONE")</script>';
+				echo '<div class="dialog_container" id="dialog_container">
+				<div class="dialogbox">
+								<p>SCRIPT NOT UPLOADED SUCCESFULLY</p>
+								<button id="close">CLOSE</button>
+							</div>
+				</div>
+				<script>
+	const dialog_container=document.getElementById("dialog_container");
+	const close=document.getElementById("close");
+
+	close.addEventListener("click" , () => {
+	dialog_container.classList.add("close");
+	})
+</script>';
 			}
 		}
 		//UPDATE
@@ -55,9 +81,35 @@ use LDAP\Result;
 			}
 
 			if($this->mysqli->query($sql)){
-				echo '<script>alert("DONE")</script>';
+				echo '<div class="dialog_container" id="dialog_container">
+				<div class="dialogbox">
+								<p>SCRIPT UPDATED SUCCESFULLY</p>
+								<button id="close">CLOSE</button>
+							</div>
+				</div>
+				<script>
+	const dialog_container=document.getElementById("dialog_container");
+	const close=document.getElementById("close");
+
+	close.addEventListener("click" , () => {
+	dialog_container.classList.add("close");
+	})
+</script>';
 			}else{
-				echo '<script>alert("NOT DONE")</script>';
+				echo '<div class="dialog_container" id="dialog_container">
+				<div class="dialogbox">
+								<p>SCRIPT NOT UPDATED SUCCESFULLY</p>
+								<button id="close">CLOSE</button>
+							</div>
+				</div>
+				<script>
+	const dialog_container=document.getElementById("dialog_container");
+	const close=document.getElementById("close");
+
+	close.addEventListener("click" , () => {
+	dialog_container.classList.add("close");
+	})
+</script>';
 			}
 		}
 		
@@ -69,9 +121,35 @@ use LDAP\Result;
 				$sql .=" WHERE sno='$where'";
 			}
 			if($this->mysqli->query($sql)){
-				echo '<script>alert("DONE")</script>';
+				echo '<div class="dialog_container" id="dialog_container">
+				<div class="dialogbox">
+								<p>SCRIPT DELETED SUCCESFULLY</p>
+								<button id="close">CLOSE</button>
+							</div>
+				</div>
+				<script>
+	const dialog_container=document.getElementById("dialog_container");
+	const close=document.getElementById("close");
+
+	close.addEventListener("click" , () => {
+	dialog_container.classList.add("close");
+	})
+</script>';
 			}else{
-				echo '<script>alert("NOT DONE")</script>';
+				echo '<div class="dialog_container" id="dialog_container">
+				<div class="dialogbox">
+								<p>SCRIPT NOT DELETED SUCCESFULLY</p>
+								<button id="close">CLOSE</button>
+							</div>
+				</div>
+				<script>
+	const dialog_container=document.getElementById("dialog_container");
+	const close=document.getElementById("close");
+
+	close.addEventListener("click" , () => {
+	dialog_container.classList.add("close");
+	})
+</script>';
 			}
 		}
 		//SELECT

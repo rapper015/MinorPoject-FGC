@@ -86,8 +86,8 @@ if(isset($_POST['upload']))
 
                 ?>
             </table>
-        </div>
     </div>
+</div>
 </div>
 <?php
 	if(isset($_POST['upload_edit']))
