@@ -1,7 +1,7 @@
 <footer>
     <div class="footer-top">
-        <h3>Film Ginny Corporation</h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi itaque repellendus quo aspernatur cum imped</p>
+        <h3>Film Ginny Corporation</h3><br>
+        <img src="images/logo.png" alt="" srcset="">
         <ul class="socials">
             <li><a href="#"><i class="fab fa-facebook"></i></a></li>
             <li><a href="#"><i class="fab fa-twitter"></i></a></li>
