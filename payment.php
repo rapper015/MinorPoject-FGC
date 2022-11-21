@@ -24,7 +24,7 @@ if (isset($_POST['submit'])) {
 	$zipcode = $_POST['zipcode'];
 
 
-    $obj->insert($table, ['fullname' => $fullname, 'email' => $email, 'address' => $address, 'city' => $city, 'state' => $state, 'zipcode' => $zipcode]);
+    $obj->insert($table, ['fullname' => $fullname, 'email' => $email, 'address' => $address, 'city' => $city, 'state' => $state, 'zipcode' => $zipcode],null);
 }
 ?>
 <body>
